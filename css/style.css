@@ -178,7 +178,7 @@ header {
     height: 603px;
 }
 
-.fondo-gris {
+.fondo-naranja {
     background-color: var(--naranja);
     padding: 60px 0;
 }
@@ -315,11 +315,83 @@ header {
     object-fit: cover;
 }
 
+.fondo-gris-bajo {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.cont-subtitulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-arrow a {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-decoration: none;
+    border: 3px var(--negro) solid;
+    display: inline-block;
+}
+
+.box-arrow a i {
+    padding: 2px 4px;
+    font-size: 24px;
+    color: var(--negro);
+    display: inline-block;
+}
+
+.viewport {
+    position: relative;
+    height: 432px;
+    overflow: hidden;
+}
+
+.overview {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    position: absolute;
+}
+
+.card-team {
+    width: 285px;
+    margin-right: 18px;
+}
+
+.card-team figure {
+    width: 100%;
+    overflow: hidden;
+}
+
+.card-team:hover figure img{
+    transform: scale(1.1);
+    filter: grayscale(.8);
+}
+
+.card-team figure img {
+    width: 100%;
+    transition: all .5s;
+}
+
+.card-team h4 {
+    margin-top: 30px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.card-team p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    color: #999999;
+}
+
 .cont-bicolor {
     background: linear-gradient(180deg, var(--gris) 50%, rgba(255,255,255,1) 50%);
     padding: 100px 0;
 }
-
 
 .cont-final {
     max-width: 900px;
@@ -339,4 +411,30 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.btn-flotante {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--amarillo);
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    z-index: 10;
+    transition: all .5s;
+}
+
+.btn-flotante:hover {
+    background-color: var(--naranja);
+    border-radius: 10px;
+    border: 2px var(--negro) solid;
+}
+
+.btn-flotante i {
+    color: var(--negro);
+    font-size: 20px;
 }

@@ -113,11 +113,41 @@
         object-fit: cover;
     }
 
+    .bottom2 {
+        margin: 25px 0 35px 0;
+    }
+
+    .card-team {
+        margin-right: 0;
+        margin: 0 8px 0 10px;
+    }
+
     .cont-bicolor {
         padding: 50px 0;
     }
 
     .cont-final {
         margin: 0 10px;
+    }
+
+    .btn-flotante {
+        right: 20px;
+        bottom: 20px;
+    }
+
+    .btn-flotante:hover {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--amarillo);
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        z-index: 10;
+        transition: all .5s;
+        border: none;
     }
 }

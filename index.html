@@ -19,6 +19,7 @@
     <script src="js/responsiveslides.min.js"></script>
     <script src="js/fancy/jquery.fancybox.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/jquery.tinycarousel.js"></script>
 </head>
 <body>
     <header>
@@ -98,7 +99,7 @@
             </ul>
         </section>
     </div>
-    <div class="fondo-gris">
+    <div class="fondo-naranja">
         <section class="numeros maximo">
             <article class="card-num wow animate__animated animate__bounceInDown">
                 <h3>8350</h3>
@@ -219,6 +220,59 @@
             <img src="img/galeria12.jpg" alt="">
         </a>
     </section>
+    <div class="fondo-gris-bajo">
+        <section id="slider1" class="team maximo">
+            <div class="cont-subtitulo">
+                <h2 class="subtitulos">Our Team</h2>
+                <div class="box-arrow">
+                    <a class="buttons prev arrow" href="#">
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+
+                    <a class="buttons next arrow" href="#">
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <hr class="bottom">
+            <div class="viewport">
+                <div class="overview">
+                    <article class="card-team">
+                        <figure>
+                            <img src="img/team1.jpg" alt="">
+                        </figure>
+                        <h4>Ben Sheridan</h4>
+                        <p>Founder & CEO</p>
+                        <hr class="bottom bottom2">
+                    </article>
+                    <article class="card-team">
+                        <figure>
+                            <img src="img/team2.jpg" alt="">
+                        </figure>
+                        <h4>Sophie Lana</h4>
+                        <p>Founder & CEO</p>
+                        <hr class=" bottom bottom2">
+                    </article>
+                    <article class="card-team">
+                        <figure>
+                            <img src="img/team3.jpg" alt="">
+                        </figure>
+                        <h4>James Hoult</h4>
+                        <p>Project Manager</p>
+                        <hr class=" bottom bottom2">
+                    </article>
+                    <article class="card-team">
+                        <figure>
+                            <img src="img/team4.jpg" alt="">
+                        </figure>
+                        <h4>Oscar Helman</h4>
+                        <p>Construction Manager</p>
+                        <hr class="bottom bottom2">
+                    </article>
+                </div>
+            </div>
+        </section>
+    </div>
     <div class="cont-bicolor">
         <section class="maximo">
             <h2 class="subtitulos" style="color: white;">Latest News</h2>
@@ -229,6 +283,9 @@
                 <iframe src="https://www.youtube.com/embed/wuHXsjt8wlI" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
             </article>
         </section>
+    </div>
+    <div id="btn-flotante" class="btn-flotante">
+        <i class="fas fa-arrow-up"></i>
     </div>
     <script>
     //Slide
@@ -263,6 +320,18 @@
         var activar_tab = $(this).attr("href");
         $(activar_tab).show();
       });
+
+    //Carrousell
+    $(document).ready(function () {
+        $("#slider1").tinycarousel();
+    });
+
+    //btn-flotante
+    $(document).ready(function () {
+        $("#btn-flotante").click(function(){
+            $('html, body').animate({scrollTop : 0}, 2000);
+        });
+    });
     </script>
 </body>
 </html>
