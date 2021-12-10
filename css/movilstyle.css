@@ -1,0 +1,123 @@
+@media screen and (max-width:390px) {
+    :root {
+        --amarillo: #ffd200;
+        --gris: #222222;
+        --naranja: #FDA65D;
+        --negro: black;
+        --blanco: white;
+    }
+
+    header {
+        height: auto;
+        background-position: -900px 0;
+    }
+
+    .difuminado {
+        display: none;
+    }
+
+    .menu-logo {
+        margin-top: 0;
+        background-color: var(--negro);
+        flex-direction: column;
+    }
+
+    .sandwich {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sandwich div {
+        display: inline-block;
+        font-size: 30px;
+        color: var(--blanco);
+        background-color: var(--gris);
+        padding: 5px;
+    }
+
+    nav {
+        width: 100%;
+        padding: 20px 20px 50px 20px;
+        background-color: var(--negro);
+        display: none;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu li {
+        width: 100%;
+        border-bottom: 2px var(--blanco) dotted;
+    }
+
+    .menu li a{
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .cabecera{
+        margin: 150px 0;
+        padding: 0 15px;
+    }
+
+    .bottom {
+        margin: 25px 0 35px 10px;
+    }
+
+    .subtitulos {
+        margin: 0 10px;
+    }
+
+    .btn-transparente {
+        padding: 10px 32px;
+    }
+
+    .btns-cabecera {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .numeros {
+        grid-template: repeat(4, 1fr) / auto;
+        row-gap: 100px;
+    }
+
+    .ventajas {
+        grid-template: repeat(6, 1fr) / auto;
+        margin: 0 20px;
+    }
+
+    .parallax2 {
+        background-position: -400px 0;
+    }
+
+    .compania {
+        grid-template: repeat(2, auto) / auto;
+    }
+
+    .galeria {
+        grid-template: repeat(12, 1fr) / 1fr;
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+
+    .galeria a img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .cont-bicolor {
+        padding: 50px 0;
+    }
+
+    .cont-final {
+        margin: 0 10px;
+    }
+}
