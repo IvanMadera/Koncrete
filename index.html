@@ -182,6 +182,18 @@
             </figure>
         </section>
     </div>
+    <div class="fondo-amarillo">
+        <section class="suscripcion maximo">
+            <hgroup>
+                <h2>Attention!</h2>
+                <h4>
+                    Looking for best partner for your next construction works? Sed ut
+                    perspiciatis unde omnis iste natus error sit voluptatem.
+                </h4>
+            </hgroup>
+            <a id="btnabrir" class="btn-sub hvr-sweep-to-right" href="#">Subscribe Now</a>
+        </section>
+    </div>
     <div class="fondo-gris">
         <div class="maximo">
             <h2 style="color: white;" class="subtitulos">Our Services</h2>
@@ -376,6 +388,25 @@
             </article>
         </section>
     </div>
+    <div id="modal-view" class="cont-modal">
+        <section class="modal">
+            <i class="fas fa-mail-bulk fa-8x"></i>
+            <h2>SUBSCRIBE!</h2>
+            <p>
+                Subscribe our news letter delivered to your inbox
+                and get notifications to stay update.
+            </p>
+            <input type="text" placeholder="Enter your email" required>
+            <div class="caja-btns">
+                <a id="btncerrar" class="btn-l" href="#">
+                    Yes, Please
+                </a>
+                <a id="btncerrar2" class="btn-r" href="#">
+                    No, Thanks
+                </a>
+            </div>
+        </section>
+    </div>
     <div id="btn-flotante" class="btn-flotante">
         <i class="fas fa-arrow-up"></i>
     </div>
@@ -424,6 +455,29 @@
             $('html, body').animate({scrollTop : 0}, 2000);
         });
     });
+    //Modal
+    var modal = document.getElementById("modal-view");
+    var btnabrir = document.getElementById("btnabrir");
+    var btncerrar = document.getElementById("btncerrar");
+    var btncerrar2 = document.getElementById("btncerrar2");
+
+    btnabrir.onclick = function() {
+        modal.style.display = "flex";
+    }
+
+    btncerrar.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    btncerrar2.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal){
+            modal.style.display = "none";
+        }
+    };
     </script>
 </body>
 </html>

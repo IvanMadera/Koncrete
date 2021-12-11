@@ -101,6 +101,27 @@
         grid-template: repeat(2, auto) / auto;
     }
 
+    .suscripcion {
+        padding: 0 10px;
+        flex-direction: column;
+    }
+
+    .suscripcion hgroup h2 {
+        margin-bottom: 10px;
+    }
+
+    .suscripcion hgroup h4 {
+        text-align: justify;
+    }
+
+    .btn-sub {
+        padding: 10px 30px;
+    }
+
+    .cont-modal {
+        padding: 0 20px;
+    }
+
     .servicios {
         grid-template: repeat(6,1fr) / auto;
         padding: 0 10px;
