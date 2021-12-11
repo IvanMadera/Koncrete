@@ -101,6 +101,11 @@
         grid-template: repeat(2, auto) / auto;
     }
 
+    .servicios {
+        grid-template: repeat(6,1fr) / auto;
+        padding: 0 10px;
+    }
+
     .galeria {
         grid-template: repeat(12, 1fr) / 1fr;
         row-gap: 10px;
