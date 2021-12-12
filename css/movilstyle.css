@@ -139,6 +139,15 @@
         object-fit: cover;
     }
 
+    .cont-testimonio {
+        grid-template: repeat(2, auto) / auto;
+        row-gap: 50px;
+    }
+
+    .icono-texto {
+        padding: 0 10px;
+    }
+
     .bottom2 {
         margin: 25px 0 35px 0;
     }
