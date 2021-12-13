@@ -161,8 +161,42 @@
         padding: 50px 0;
     }
 
+    .logo-redes figure {
+        margin: auto;
+    }
+
     .cont-final {
         margin: 0 10px;
+    }
+
+    .logo-redes {
+        grid-template: repeat(3,auto)/auto;
+        row-gap: 20px;
+    }
+
+    .lista-menu {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .lista-menu li {
+        width: 90%;
+        text-align: center;
+        border-bottom: 1px var(--blanco) dotted;
+    }
+
+    .lista-menu li a {
+        display: block;
+        padding-bottom: 10px;
+    }
+
+    .cont-redes {
+        gap: 20px;
+    }
+
+    .cont-info {
+        grid-template: repeat(3, auto) / 1fr;
+        row-gap: 20px;
     }
 
     .btn-flotante {

@@ -107,6 +107,7 @@ header {
     display: inline-block;
     font-size: 13px;
     color: var(--blanco);
+    transition: all .5s;
 }
 
 .menu li a:hover {
@@ -323,6 +324,9 @@ header {
     color: var(--negro);
     font-weight: 500;
     border: 2px var(--negro) solid;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
     padding: 10px 20px;
 }
 
@@ -396,9 +400,15 @@ header {
     display: inline-block;
     background-color: var(--gris);
     padding: 8px 20px;
-    border-radius: 25px;
+    border-radius: 10px;
     color: var(--blanco);
     border: 2px var(--gris) solid;
+    transition: all .5s;
+}
+
+.btn-l:hover {
+    background-color: var(--blanco);
+    color: var(--negro);
 }
 
 .btn-r {
@@ -406,9 +416,15 @@ header {
     display: inline-block;
     color: var(--gris);
     padding: 8px 20px;
-    border-radius: 25px;
+    border-radius: 10px;
     background-color: var(--blanco);
     border: 2px var(--gris) solid;
+    transition: all .5s;
+}
+
+.btn-r:hover {
+    color: var(--blanco);
+    background-color: var(--gris);
 }
 
 .fondo-gris {
@@ -695,6 +711,7 @@ header {
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 10px;
+    transition: all .5s;
 }
 
 .btn-submit button:hover {
@@ -702,6 +719,114 @@ header {
     color: var(--blanco);
     border: 1px var(--gris) solid;
     font-weight: 500;
+}
+
+.pie {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    padding-top: 50px;
+    background-color: var(--gris);
+}
+
+.logo-redes {
+    width: 100%;
+    display: grid;
+    grid-template: auto / auto 1fr auto;
+}
+
+.logo-redes figure {
+    max-width: 200px;
+}
+
+.logo-redes figure img {
+    width: 100%;
+}
+
+.lista-menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+}
+
+.lista-menu li a {
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    display: inline-block;
+    color: var(--blanco);
+    transition: all .5s;
+}
+
+.lista-menu li a:hover {
+    color: var(--amarillo);
+}
+
+.cont-redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.icono-red {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    background-color: #444444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all .5s;
+}
+
+.icono-red:hover {
+    background-color: var(--amarillo);
+}
+
+.icono-red i {
+    color: var(--blanco);
+}
+
+.cont-info {
+    width: 100%;
+    display: grid;
+    grid-template: auto / repeat(3, 1fr);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contacto h3 {
+    font-size: 16px;
+    color: var(--amarillo);
+}
+
+.contacto p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    color: var(--blanco);
+}
+
+.divisor {
+    width: 100%;
+    height: 2px;
+    border: none;
+    background-color: var(--amarillo);
+    margin: 20px 0 ;
+}
+
+.derechos {
+    width: 100%;
+    text-align: center;
+    color: var(--blanco);
+    font-size: 14px;
+    background-color: #444444;
+    padding: 20px 0;
 }
 
 .btn-flotante {
