@@ -8,7 +8,9 @@
     }
 
     header {
+        height: auto;
         background-position: -900px 0;
+        padding-bottom: 1px;
     }
 
     .difuminado {
@@ -220,7 +222,7 @@
 
     .btn-flotante {
         right: 20px;
-        bottom: 20px;
+        bottom: 30px;
     }
 
     .btn-flotante:hover {
