@@ -8,7 +8,6 @@
     }
 
     header {
-        height: auto;
         background-position: -900px 0;
     }
 
@@ -99,6 +98,26 @@
 
     .compania {
         grid-template: repeat(2, auto) / auto;
+    }
+
+    .time-line {
+        padding: 50px 10px;
+    }
+
+    .cont-fechas {
+        gap: 210px
+    }
+
+    .cont-dots {
+        gap: 233.8px;
+    }
+
+    .cont-procesos {
+        gap: 86px;
+    }
+
+    .procesos h2 {
+        font-size: 15px;
     }
 
     .suscripcion {
@@ -218,5 +237,17 @@
         z-index: 10;
         transition: all .5s;
         border: none;
+    }
+}
+
+@media screen and (max-width:385px) {
+    .cont-procesos {
+        gap: 62px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .cont-procesos {
+        gap: 57px;
     }
 }

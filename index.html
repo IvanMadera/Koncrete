@@ -23,7 +23,7 @@
     <script src="js/jquery.tinycarousel.js"></script>
 </head>
 <body>
-    <header>
+    <header id="home">
         <div class="difuminado">
             <div class="datos maximo">
                 <article class="basicos">
@@ -55,15 +55,15 @@
                 </div>
                 <nav id="menu">
                     <ul class="menu">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Process</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#process">Process</a></li>
+                        <li><a href="#projects">Gallery</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -120,7 +120,7 @@
             </article>
         </section>
     </div>
-    <div class="parallax1">
+    <div id="process" class="parallax1">
         <section class="maximo ventajas">
             <article class="card-ventaja">
                 <i class="fas fa-check fa-2x"></i>
@@ -154,7 +154,7 @@
             </article>
         </section>
     </div>
-    <div class="parallax2">
+    <div id="about" class="parallax2">
         <section class="compania maximo">
             <div>
                 <h2 class="subtitulos">We Proud To Be Awards Winning Construction Company</h2>
@@ -183,6 +183,76 @@
             </figure>
         </section>
     </div>
+    <section class="maximo time-line">
+        <hgroup class="cont-fechas">
+            <h3>2006</h3>
+            <h3>2008</h3>
+            <h3>2009</h3>
+            <h3>2012</h3>
+            <h3>2014</h3>
+            <h3>2016</h3>
+        </hgroup>
+        <div class="linea-vertical">
+            <div class="cont-dots">
+                <div class="dots"></div>
+                <div class="dots"></div>
+                <div class="dots"></div>
+                <div class="dots"></div>
+                <div class="dots"></div>
+                <div class="dots"></div>
+            </div>
+        </div>
+        <div class="cont-procesos">
+            <article class="procesos">
+                <h2>Beginning Our Services</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat.
+                </p>
+            </article>
+            <article class="procesos">
+                <h2>Offering More Services</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat.
+                </p>
+            </article>
+            <article class="procesos">
+                <h2>Opening Our First Branch Office</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat.
+                </p>
+            </article>
+            <article class="procesos">
+                <h2>Expansion and Transformations</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat.
+                </p>
+            </article>
+            <article class="procesos">
+                <h2>Offering Franchise Opportunity</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat.
+                </p>
+            </article>
+            <article class="procesos">
+                <h2>Consistent Innovation</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat.
+                </p>
+            </article>
+        </div>
+    </section>
     <div class="fondo-amarillo">
         <section class="suscripcion maximo">
             <hgroup>
@@ -195,7 +265,7 @@
             <a id="btnabrir" class="btn-sub hvr-sweep-to-right" href="#">SUBSCRIBE NOW</a>
         </section>
     </div>
-    <div class="fondo-gris">
+    <div id="services" class="fondo-gris">
         <div class="maximo">
             <h2 style="color: white;" class="subtitulos">Our Services</h2>
             <hr class="bottom">
@@ -287,7 +357,7 @@
             </article>
         </section>
     </div>
-    <section class="galeria">
+    <section id="projects" class="galeria">
         <a class="fancybox" rel="gallery1" href="img/galeria1.jpg" title="GREEN HOUSE">
             <img src="img/galeria1.jpg" alt="">
         </a>
@@ -348,7 +418,7 @@
             </figure>
         </section>
     </div>
-    <div class="fondo-gris-bajo">
+    <div id="team" class="fondo-gris-bajo">
         <section id="slider1" class="team maximo">
             <div class="cont-subtitulo">
                 <h2 class="subtitulos">Our Team</h2>
@@ -401,7 +471,7 @@
             </div>
         </section>
     </div>
-    <div class="cont-bicolor">
+    <div id="blog" class="cont-bicolor">
         <section class="maximo">
             <h2 class="subtitulos" style="color: white;">Latest News</h2>
             <hr class="bottom">
@@ -412,7 +482,7 @@
             </article>
         </section>
     </div>
-    <section class="fondo-gris-medio">
+    <section id="contact" class="fondo-gris-medio">
         <div class="maximo">
             <h2 class="subtitulos">Send Us Message</h2>
             <hr class="bottom">
@@ -467,11 +537,11 @@
                 <img src="img/logo.png" alt="">
             </figure>
             <ul class="lista-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#projects">Gallery</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="cont-redes">
                 <a href="#" class="icono-red">
