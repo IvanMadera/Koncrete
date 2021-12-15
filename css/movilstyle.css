@@ -1,4 +1,4 @@
-@media screen and (max-width:390px) {
+@media screen and (max-width:394px) {
     :root {
         --amarillo: #ffd200;
         --gris: #222222;
@@ -235,7 +235,7 @@
         background-color: var(--amarillo);
         position: fixed;
         right: 20px;
-        bottom: 20px;
+        bottom: 30px;
         z-index: 10;
         transition: all .5s;
         border: none;
