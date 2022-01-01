@@ -299,66 +299,69 @@ header {
     width: 100%;
 }
 
-.time-line {
+.timeline {
+    position: relative;
+    margin-top: 50px;
+}
+
+.timeline::after {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: black;
+    top: 0;
+    left: 100px;
+    position: absolute;
+}
+
+.eachline {
     display: flex;
     flex-direction: row;
-    justify-content: stretch;
-    align-items: stretch;
-    gap: 20px;
-    padding: 50px 0;
+    align-items: baseline;
+    margin-bottom: 50px;
 }
 
-.cont-fechas {
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
+.eachline:nth-child(1) .date,
+.eachline:nth-child(2) .date,
+.eachline:nth-child(3) .date
+{
+    margin-right: -5px;
 }
 
-.cont-fechas h3 {
-    color: var(--blanco);
+.date {
+    color: white;
     font-size: 17px;
     padding: 10px 20px 10px 10px;
-    background-color: var(--gris);
+    background-color: black;
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
 }
 
-.linea-vertical{
-    width: 1px;
-    background-color: var(--gris);
+.data {
+    padding-left: 70px;
     position: relative;
 }
 
-.cont-dots {
-    display: flex;
-    flex-direction: column;
-    gap: 124px;
-    position: absolute;
-    top: 13px;
-    left: -10px;
-}
-
-.dots {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: var(--amarillo);
-}
-
-.cont-procesos {
-    padding-top: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 73px;
-}
-
-.procesos h2 {
+.data h2 {
     font-size: 17px;
     font-weight: 500;
+    margin-bottom: 10px;
 }
 
-.procesos p {
+.data p {
     font-family: 'Nunito', sans-serif;
     font-size: 14px;
+}
+
+.data::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: orange;
+    top: 3px;
+    left: 25px;
+    position: absolute;
+    z-index: 2;
 }
 
 .fondo-amarillo {

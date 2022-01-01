@@ -102,26 +102,6 @@
         grid-template: repeat(2, auto) / auto;
     }
 
-    .time-line {
-        padding: 50px 10px;
-    }
-
-    .cont-fechas {
-        gap: 210px
-    }
-
-    .cont-dots {
-        gap: 233.8px;
-    }
-
-    .cont-procesos {
-        gap: 86px;
-    }
-
-    .procesos h2 {
-        font-size: 15px;
-    }
-
     .suscripcion {
         padding: 0 10px;
         flex-direction: column;
@@ -242,14 +222,12 @@
     }
 }
 
-@media screen and (max-width:385px) {
-    .cont-procesos {
-        gap: 62px;
+@media screen and (max-width:1999px) {
+    .timeline {
+        padding: 0 10px;
     }
-}
 
-@media screen and (max-width:380px) {
-    .cont-procesos {
-        gap: 57px;
+    .data::before {
+        left: 15px;
     }
 }
