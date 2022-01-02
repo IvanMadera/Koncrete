@@ -308,7 +308,7 @@ header {
     content: '';
     width: 1px;
     height: 100%;
-    background-color: black;
+    background-color: var(--gris);
     top: 0;
     left: 100px;
     position: absolute;
@@ -328,8 +328,16 @@ header {
     margin-right: -5px;
 }
 
+.eachline:nth-child(4) .date{
+    margin-right: 0.5px;
+}
+
+.eachline:nth-child(5) .date{
+    margin-right: -1px;
+}
+
 .date {
-    color: white;
+    color: var(--blanco);
     font-size: 17px;
     padding: 10px 20px 10px 10px;
     background-color: black;
@@ -357,7 +365,7 @@ header {
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background-color: orange;
+    background-color: var(--amarillo);
     top: 3px;
     left: 25px;
     position: absolute;
