@@ -226,8 +226,4 @@
     .timeline {
         padding: 0 10px;
     }
-
-    .data::before {
-        left: 15px;
-    }
 }
